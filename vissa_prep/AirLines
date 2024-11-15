@@ -1,0 +1,5 @@
+import math
+X, N = map(int, input().split())
+no_aircrafts =math.ceil(N/100)
+new_aircrafts =max(0, no_aircrafts - X)
+print(new_aircrafts)
