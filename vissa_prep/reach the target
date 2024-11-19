@@ -1,0 +1,5 @@
+T = int(input())
+for i in range(T):
+    X, Y = map(int, input().split())
+    runs_needed = max(0, X - Y+1)
+    print(runs_needed)
