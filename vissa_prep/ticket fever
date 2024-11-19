@@ -1,0 +1,13 @@
+def cal_left_out_stud(test_cases):
+    results = []
+    for n, m in test_cases:
+        if n>m:
+            results.append(n-m)
+        else:
+            results.append(0)
+    return results
+t = int(input())
+test_cases = [tuple(map(int, input().split()))for _ in range(t)]
+results = cal_left_out_stud(test_cases)
+for res in results:
+    print(res)
